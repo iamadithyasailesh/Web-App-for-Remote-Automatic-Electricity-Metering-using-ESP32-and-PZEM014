@@ -1,0 +1,159 @@
+.body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  overflow: -moz-scrollbars-none;  // Firefox
+
+}
+.body::-webkit-scrollbar { width: 0 !important }
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-areas:
+ 'header'
+ 'main'
+    'footer';
+  height: 100vh;-
+41
+
+
+  overflow: -moz-scrollbars-none;
+}
+
+.grid-container::-webkit-scrollbar { width: 0 !important }
+
+
+.header {
+  grid-area: header;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  color:blue;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: #FFFFFF;
+   font-weight: 400;
+
+} 
+
+
+
+.header_block
+{
+    font-size: 24px;
+   align-items: center;
+  color:black;
+  background-color: #FFFFFF;
+42
+
+   font-weight: 300;
+
+}
+
+
+
+
+.main {
+  grid-area: main;
+  background-color: #e0e0e0;
+}
+
+.main-header {
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
+  grid-auto-rows: 180px;
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.main-header-card {
+
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius:8px;
+  position:relative;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+43
+
+
+}
+
+.main-header-card-title {
+  font-size: 28px;
+  height:50px;
+  width: 100%;
+  position:absolute;
+  top:4%;
+  left:4%;
+  text-align:left;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  font-weight: 500;
+}
+
+.main-header-card-subtitle {
+  font-size: 16px;
+  height:20px;
+  width: 100%;
+  position:absolute;
+  color:slategrey;
+  top:21%;
+  left:4%;
+  text-align:left;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+}
+44
+
+
+.main-header-card-info {
+  font-size: 65px;
+  position:absolute;
+  color:green;
+  top:36%;
+  left:0%;
+  height:100px;
+  width: 100%;
+  font-weight: 300;
+}
+
+
+
+
+.unit
+{
+  color:slategrey;
+  font-size: 24px;
+  position:absolute;
+  top:17%;
+  left:62%;
+  height:100px;
+  width:150px;
+}
+
+.main-header-card-footer {
+  font-size: 20px;
+45
+
+  text-align:left;
+  position:absolute;
+  top:80%;
+  left:5%;
+  color:slategrey;
+  width: 100%;
+}
+
+
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: #e0e0e0;
+}
