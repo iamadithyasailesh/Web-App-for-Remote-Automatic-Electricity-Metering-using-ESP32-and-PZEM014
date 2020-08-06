@@ -1,3 +1,4 @@
+/*Program to Obtain IP Address of Remote Server by Serial Communication of Meter and ESP32 using Arduino IDE*/
 /*
   An Arduino Sketch for reading data from a PZEM-014 or PZEM-016, tested with ESP32 DEVKit 1, Arduino 1.8.5
   EvertDekker.com 2018, based on the example from http://solar4living.com/pzem-arduino-modbus.htm
@@ -27,8 +28,8 @@ WebsocketsServer server;
 WebsocketsClient client;
 
 
-const char* ssid = "2.5G-APHN846B1BAD"; //Enter SSID
-const char* password = "ajith_kkd"; //Enter Password
+const char* ssid = "......"; //Enter SSID
+const char* password = "..."; //Enter Password
 
 
 
